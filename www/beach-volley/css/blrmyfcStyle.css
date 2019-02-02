@@ -44,6 +44,15 @@ nav{
   src: url(/fonts/Pecita.otf); /* Для IE5-8 */
   src: local(Pecita), url(fonts/Pecita.otf); /* Для остальных браузеров */
 }
+@font-face {
+  font-family: League Gothic; /* Гарнитура шрифта */
+  src: url(/fonts/LeagueGothic.otf); /* Для IE5-8 */
+  src: local(LeagueGothic), url(fonts/LeagueGothic.otf); /* Для остальных браузеров */
+}
+
+
+
+
 #header-block{
   margin-top: -50px;
   background: #e3e2e1;
