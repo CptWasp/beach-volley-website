@@ -197,26 +197,37 @@ vitae. Mauris suscipit vel lectus at luctus.</p>
             
             
             
-            <div class="col-lg-8 col-md-8 col-sm-8 col-10 offset-lg-4 offset-md-3 offset-sm-1 offset-1">
+            <div class="col-lg-10 col-md-10 col-sm-12 col-12 offset-lg-2 offset-md-2">
                 
                 
                 
                 <form class="form-inline">
                   <div class="form-group">
                         <div class="input-group">
-                            <input type="name" class="form-control" id="name-input" placeholder="Ваше имя:">
-                            <input type="phone" class="form-control" id="phone-input" placeholder="Телефон:">
+                            <input type="text" class="form-control" id="name-input" placeholder="Ваше имя:">
+                            <input type="text" class="form-control" id="phone-input" placeholder="Телефон:">
+                                        <select class="custom-select" id="answer-block">
+                                            <option selected>Веберите</option>
+                                            <option value="1">Хочу научиться</option>
+                                            <option value="2">Умею играть</option>
+                                            <option value="3">Ищу зал</option>
+                                          </select>
                             <button type="button" id="post-button" class="btn btn-primary">Отправить</button>
+                            
                         </div>
                   </div>
                 </form>  
             </div>
             
-            <div class="col-lg-8 col-md-8 col-sm-8 col-10 offset-lg-4 offset-md-3 offset-sm-1 offset-1">
+            <div class="col-lg-10 col-md-10 col-sm-12 col-12 offset-lg-2 offset-md-2">
                 <p id="sub-text">
                   <img src="fonts/lock.png" width="18px" height="18px">  
                     * Ваши данные не будут переданы третьим лицам
                 </p>
+                <div class="spinner-grow text-info" id="spinner" style="width: 4rem; height: 4rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                
             </div>
             
         </div> 
@@ -436,7 +447,7 @@ vitae. Mauris suscipit vel lectus at luctus.</p>
                 </div>
                 
                 <div class="row justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-center">
-                    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Телефон">
+                    <input type="text" class="form-control" id="inlineFormInputphone" style="width: 72%; margin-bottom: 1rem;" placeholder="Телефон">
                 </div>
                 
                 
@@ -446,15 +457,20 @@ vitae. Mauris suscipit vel lectus at luctus.</p>
                   <select class="custom-select" id="inlineFormCustomSelect">
                     <option selected>Веберите</option>
                     <option value="1">Хочу научиться</option>
-                    <option value="2">Играть умею</option>
-                    <option value="3">Поиграть</option>
+                    <option value="2">Умею играть</option>
+                    <option value="3">Ищу зал</option>
                   </select>
               
               </div>
                 <div class="form-row align-items-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-center">
                     <button type="submit" class="btn btn-primary" id="ftr-btn">ОТПРАВИТЬ</button>
                 </div>
-            </form>     
+            </form>   
+        
+                            <div class="spinner-grow text-info" id="spinner-0" style="width: 4rem; height: 4rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            
     </div>
 </div>
       
@@ -464,184 +480,158 @@ vitae. Mauris suscipit vel lectus at luctus.</p>
       
       <div class="container-fluid" id="footer">
         <div class="row">
-              
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
+                <p class="footer-text">
+                    Поддержка
+                </p>    
+                <br>
+                <p class="footer-text-sub"><a>
+                   Связаться с нами 
+                    </a></p>
+                <p class="footer-text-sub">
+                <a>
+                   Политика конфиденциальности 
+                    </a></p>
+                <p class="footer-text-sub">
+                <a>
+                   FAQ
+                </a>
+                </p>
+                
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
+                <p class="footer-text">
+                    Сообщество
+                </p> 
+                <br>
+                <p class="footer-text-sub">
+                    <a>
+                        Вконтакте 
+                    </a>
+                </p>
+                <p class="footer-text-sub">
+                    <a>
+                        instagram 
+                    </a>
+                </p>
+                <p class="footer-text-sub">
+                    <a>
+                        facebook 
+                    </a>
+                </p>
+                <p class="footer-text-sub">
+                    <a>
+                        WhatsApp
+                    </a>
+                </p>
+            </div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-3 col-3 offset-lg-1 offset-md-1 offset-sm-1 offset-1">
+                <p class="footer-text">
+                    Компания
+                </p>  
+                <br>
+                <p class="footer-text-sub">
+                    <a>
+                        О Нас
+                    </a>
+                </p>
+                <p class="footer-text-sub">
+                    <a>
+                        Контакты
+                    </a>
+                </p>
+                <p class="footer-text-sub">
+                    <a>
+                        Услуги
+                    </a>
+                </p>
+            </div>
+            
+            
+            
         </div>
         
       </div>
       
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
       
       
       
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <style type="text/css">
-          #goods{
-              font-family: 'Open Sans', 'sans-serif';
-              font-size: 24pt;
-              font-weight: 800;
-              margin-top: 10%;
-              margin-bottom: 15%;
-              margin-left: 5%;
-          }
-          #offer-svg-1{
-              position: absolute;
-              background: #ffffff;
-              margin-top: 100px;
-              margin-left: 15%;
-              
-          }
-          .mcards{
-              color: white;
-              text-align: center;
-              font-family: 'Open Sans', 'sans-serif';
-              font-size: 1rem;
-              
-          }
-          .mcard-text{
-              color: white;
-              text-align: center;
-              margin-top: -6%;
-              font-family: 'Open Sans', 'sans-serif';
-              font-size: 1rem;
-          }
-          .gds-btn{
-              background: #36aeea;
-              border: none;
-              font-size: 0.8rem;
-          }
-          #piece{
-              text-decoration: line-through;
-              color: white;
-              font-family: 'Roboto', 'regular';
-              font-weight: 500;
-              margin-left: 10%;
-              font-size: 1rem;
-          }
-          .card-marg{
-              width: 13rem;
-              background: #cdcdcb;
-              opacity: 0.9;
-              margin-top: 15px;
-/*
-              margin-left: 100px;
-              margin-right: 100px;
-*/
-          }
-          .card-image{
-              opacity: 0.1;
-          }
-          #next-goods{
-              color: #383a42;
-              font-family: 'Open Sans', 'sans-serif';
-              font-size: 18pt;
-              margin-left: 10%;
-          }
-          #n-g-r{
-              margin-top: 5%;
-              margin-left: 2%;
-          }
-          #trainer{
-              font-family: 'Open Sans', 'sans-serif';
-              font-size: 24pt;
-              font-weight: 800;
-              margin-top: 30%;
-              margin-bottom: 15%;
-          }
-          .about-trainer-text{
-              color: #adadad;
-              font-family: 'Roboto', 'sans-serif';
-              font-size: 16pt;
-              margin-bottom: 10px;
-          }
-          #trainer-img{
-              width: 6rem;
-              height: 6rem;
-              background: #adadad;
-              border-radius: 3rem 3rem;
-              
-          }
-          .t-b-m{
-              padding-bottom: 5rem;
-          }
-          #trainer-id{
-              color: #36aeea;
-              font-family: 'Open Sans', 'sans-serif';
-              font-size: 18pt;
-              margin-top: 5%;
-              margin-left: -5%;
-          }
-          
-          
-          #offer-form{
-              width: 400px;
-              height: 400px;
-              border: 1px solid black; 
-              z-index: 3;
-              
-          }
-          #frm-text{
-              color: #36aeea;
-              font-family: 'Open Sans', 'sans-serif';
-              font-size: 18pt;
-              font-weight: 700;
-          }
-          #frm-text-1{
-              color: #d5d5d5;
-              font-size: 12pt;
-          }
-          .some-block-form{
-              width: 35%;
-              height: 25rem;
-              opacity: 0.8;
-              position: absolute;
-              margin-top: 10%;
-              
-          }
-          #inlineFormCustomSelect{
-              width: 75%;
-              margin-bottom: 1rem;
-          }
-          #inlineFormInputName{
-              width: 72%; 
-              margin-bottom: 1rem;
-          }
-          #ftr-btn{
-              background: #36aeea;
-              width: 75%;
-              border: none;
-              height: 3rem;;
-          }
-          #footer{
-              background: #949393;
-              height: 500px;
-              margin-top: 35%;
-          }
-          
-          
-      </style>
-      
-      
-      
-      
+     
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>        
+      
+       <script type="text/javascript">
+            $(document).ready(function(){
+                 $("#spinner").hide();
+                
+                $("#post-button").bind("click", function(){
+                    $("#answer-block").fadeIn();
+ 
+//                    server sending
+                    $.ajax({
+                        url: "email.php",
+                        type: "POST",
+                        data: ({nameUser:  $("#name-input").val(), userPhone: $("#phone-input").val(), personType:$("#answer-block").val()}),
+                        dataType: "html",
+                        beforeSend: 
+                            function(){
+                                $("#spinner").show();
+                            },
+                        success: function(data){
+                            $("#spinner").hide();
+                            $("#answer-block").hide();
+                            alert(data);
+                        }
+                    });
+                    
+                    
+                }); 
+                
+            });
+          $(document).ready(function(){
+              $("#spinner-0").hide();
+                $("#ftr-btn").bind("click", function(){
+                     
+//                    server sending
+                    $.ajax({
+                        url: "email.php",
+                        type: "POST",
+                        data: ({nameUser:  $("#inlineFormInputName").val(), userPhone: $("#inlineFormInputphone").val(), personType: $("#inlineFormCustomSelect").val()}),
+                        dataType: "html",
+                        beforeSend: 
+                            function(){
+                                $("#spinner").show();
+                            },
+                        success: function(data){
+                            $("#spinner").hide();
+                            $("#answer-block").hide();
+                            alert(data);
+                        }
+                    });
+                    
+                    
+                
+                    
+                    
+                });
+          });
+        
+                      
+      </script>
+
+      
+    
       
   </body>
 </html>
