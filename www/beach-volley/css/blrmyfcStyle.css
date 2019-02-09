@@ -10,13 +10,14 @@
         margin-left: 15%;
     }
 }
-/*
-@media screen and (min-width: 768){
     #goodsid{
-        margin-left: -10%;
+        margin-left: 2%;
+    }
+@media screen and (max-width: 768px) {
+    #goodsid{
+        margin-left: 25%;
     }
 }
-*/
 
 
 
@@ -105,9 +106,10 @@ nav{
           }
           #trainer{
               font-family: 'Open Sans', 'sans-serif';
-              font-size: 24pt;
+              font-size: 2rem;
               font-weight: 800;
               margin-top: 30%;
+              margin-left: -5%;
               margin-bottom: 15%;
           }
           .about-trainer-text{
@@ -145,7 +147,7 @@ nav{
           #frm-text{
               color: #36aeea;
               font-family: 'Open Sans', 'sans-serif';
-              font-size: 18pt;
+              font-size: 1.2rem;
               font-weight: 700;
           }
           #frm-text-1{
@@ -160,6 +162,22 @@ nav{
               margin-top: 10%;
               
           }
+@media screen and (max-width: 768px) {
+     .some-block-form{
+        width: 80%;
+        padding-bottom: -15%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+     .footer-row{
+       margin-top: 40%;
+    }
+}
+
+
+
           #inlineFormCustomSelect{
               width: 75%;
               margin-bottom: 1rem;
@@ -193,7 +211,7 @@ nav{
               color: #ffffff;
               font-family: 'Open Sans', 'sans-serif';
               font-weight: 600;
-              font-size: 18pt;
+              font-size: 1.2rem;
               margin-right: 10%;
               
           }
@@ -201,7 +219,7 @@ nav{
               color: #ffffff;
               font-family: 'Open Sans', 'sans-serif';
               font-weight: 400;
-              font-size: 16pt;
+              font-size: 1rem;
           }
           .footer-text-sub:hover{
               color: #36aeea;
@@ -246,19 +264,20 @@ nav{
           }
           #brand-print-roboto{
               font-family: 'Roboto', 'sans-serif';
-              font-size: 42pt;
+              font-size: 2.2rem;
               font-weight: 600;
               margin-left: -27%;
           }
+        
           #brand-print-pecita{
               font-family: 'Pecita', 'sans-serif';
-              font-size: 42pt;
+              font-size: 2.2rem;
               font-weight: 400;
               margin-left: -25%;
               color: #54c5fd;
               text-shadow: black 1px 1px 3px;
               position: absolute;
-              margin-top: -25px;
+              
           }
           #header-motivation-text{
               font-family: 'Roboto', sans-serif;
@@ -367,7 +386,19 @@ nav{
           }
 
 
+html{
 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
 
 
