@@ -112,6 +112,7 @@ nav{
               margin-left: -5%;
               margin-bottom: 15%;
           }
+            
           .about-trainer-text{
               color: #adadad;
               font-family: 'Roboto', 'sans-serif';
@@ -165,8 +166,14 @@ nav{
 @media screen and (max-width: 768px) {
      .some-block-form{
         width: 80%;
-        padding-bottom: -15%;
+        padding-bottom: -25%;
     }
+}
+@media screen and (min-width: 330px) {
+    #fofo{
+        background: #000000;
+    }
+    
 }
 
 
@@ -211,7 +218,7 @@ nav{
               color: #ffffff;
               font-family: 'Open Sans', 'sans-serif';
               font-weight: 600;
-              font-size: 1.2rem;
+              font-size: 1rem;
               margin-right: 10%;
               
           }
@@ -401,7 +408,13 @@ html{
   }
 
 
-
+#photos{
+            font-family: 'Open Sans', 'sans-serif';
+              font-size: 2rem;
+              font-weight: 800;
+              margin-top: 30%;
+              margin-bottom: 15%;
+            }
 
 
 
